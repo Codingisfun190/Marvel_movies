@@ -1,0 +1,231 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 4fr 50px;
+
+  height: 100vh;
+  margin: 0;
+  font-family: Helvetica;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+
+  height: 50px;
+  background-color: rgb(212, 235, 109);
+}
+
+.navBar {
+  font-size: 30px;
+}
+
+section {
+  display: flex;
+}
+
+div {
+  font-size: 20px;
+  margin: 10px;
+}
+
+
+main {
+  /* background-color: #9fbefc; */
+  /* background-image: url("https://www.thecosmiccircus.com/wp-content/uploads/2022/01/marvel-logo-e1648957687223.jpg"); */
+  /* background-image: url("https://media.wdwnt.com/2020/12/marvel-studios-logo-3945474-1200x675.jpg"); */
+  /* background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/dd55ja2-8ba5495d-00bf-4eff-91bf-8e55671aacb6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGQ1NWphMi04YmE1NDk1ZC0wMGJmLTRlZmYtOTFiZi04ZTU1NjcxYWFjYjYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pr7o7qeeKM6hPBlKfErM8-gL7z7N0EnHy0vXbjNhvVg"); */
+  /* background-image: url("https://cdn.pocket-lint.com/r/s/970x/assets/images/147514-tv-news-feature-mcu-timeline-image31-vlrstw1hpb.jpg"); */
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXwnpQO-zPAc-lpV6GWGYZ_Yb1iN-JgR4-AOhDu-Hy19u4KO6PagxGOhkGqiuDlUA_pe4&usqp=CAU"); */
+  background-image: url("https://images.alphacoders.com/118/1188665.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+footer {
+  background-color: rgb(212, 235, 109);
+  display: flex;
+  justify-content: center;
+}
+
+.footerFont {
+  font-size: 25px;
+}
+
+/* .flex-center { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  */
+
+nav, footer, main {
+  grid-column: span 2;
+}
+
+p {
+  font-size: 22px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 3px;
+}
+
+a {
+  color:rgb(60, 60, 255);
+}
+
+.phase {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  
+}
+
+.movies {
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 190px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+.p1 {
+  text-align: center;
+  margin: 3px;
+} 
+
+.movieTitle {
+  background-color: rgb(98, 250, 105);
+  padding: 1px 3px 1px 3px;
+  /* border: 2px solid white; */
+}
+
+.movieTitle:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.moviePosters {
+  height: 250px;
+  width: 175px;
+  padding-top: 10px;
+}
+
+.link-button {
+  text-align: center;
+  background-color: rgb(98, 250, 105);
+  padding: 2px;
+  border: 3px solid black;
+}
+
+.link-button:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* #phaseOne {
+  scroll-behavior: smooth;
+}
+
+#phaseTwo {
+  scroll-behavior: smooth;
+}
+
+#phaseThree {
+  scroll-behavior: smooth;
+}
+
+#phaseFour {
+  scroll-behavior: smooth;
+} */
+
+/* 
+.divPhase2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.divMovies2 {
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 190px;
+  padding: 10px 20px 10px 20px;
+}
+
+.p2 {
+  text-align: center;
+}
+
+.moviePosters2 {
+  height: 250px;
+  width: 175px;
+  padding-top: 10px;
+}
+
+.divPhase3 {
+  display: flex;
+  justify-content: flex-start;
+  
+  align-items: flex-end;
+}
+
+.divMovies3 {
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 190px;
+  padding: 10px 20px 10px 20px;
+}
+
+.p3 {
+  text-align: center;
+}
+
+.moviePosters3 {
+  height: 250px;
+  width: 175px;
+  padding-top: 10px;
+}
+
+.divPhase4 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.divMovies4 {
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 190px;
+  padding: 10px 20px 10px 20px;
+}
+
+.p4 {
+  text-align: center;
+}
+
+.moviePosters4 {
+  height: 250px;
+  width: 175px;
+  padding-top: 10px;
+} */
